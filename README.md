@@ -10,5 +10,6 @@ git clone https://github.com/shadowofleaf96/Pixiewps-Windows
 3 - change to repo current directory
 cd Pixiewps-Windows
 4 - build exe from pixiewps.c
-x86_64-w64-mingw32-gcc -o pixiewps64.exe '/home/unk/Bureau/pixiewps-1.4.2/src/pixiewps.c'
+32bit : make
+64bit : make -f '/home/unk/Bureau/pixiewps-1.4.2/Makefile64' 
 5 - voila you will find a file called pixiewps.exe
