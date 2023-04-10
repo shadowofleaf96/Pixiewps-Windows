@@ -1,6 +1,6 @@
 CFLAGS = -O3 -fstack-protector
 
-CC=i686-w64-mingw32-gcc
+CC=x86_64-w64-mingw32-gcc
 PREFIX ?= /usr/local
 BINDIR = $(PREFIX)/bin
 MANDIR = $(PREFIX)/share/man
@@ -18,7 +18,7 @@ LIBS += -lcrypto
 INTFLAGS += -DUSE_OPENSSL
 endif
 
-TARGET = pixiewps.exe
+TARGET = pixiewps64.exe
 
 include $(SRCDIR)/crypto/tfm/sources.mak
 TFMSRC = $(patsubst ./%,$(SRCDIR)/crypto/tfm/%,$(TFM_SRCS))
